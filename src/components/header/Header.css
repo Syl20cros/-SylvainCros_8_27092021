@@ -1,0 +1,31 @@
+.header nav {
+    background-color: white;
+    height: 68px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    Width: 210.32px;
+    height: 68px;
+}
+
+.header a {
+    color: #FF6060;
+    padding-left: 1rem;
+    text-decoration: none;
+}
+
+header nav .logo {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding-left: 0;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
