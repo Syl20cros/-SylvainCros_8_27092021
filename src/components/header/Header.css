@@ -1,22 +1,25 @@
 .header nav {
     background-color: white;
-    height: 68px;
+    height: 47px;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .header img {
-    Width: 210.32px;
-    height: 68px;
+    Width: 145px;
+    height: 47px;
 }
 
 .header a {
     color: #FF6060;
-    padding-left: 1rem;
+    padding-left: 2rem;
     text-decoration: none;
+    font-size: 12px;
+    line-height: 142.6%;
+    text-transform: uppercase;
 }
 
 header nav .logo {
@@ -28,4 +31,19 @@ header nav .logo {
 
 .menu:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width:768px) {
+    .header nav {
+        height: 68px;
+        margin-top: 40px;
+    }
+    .header a {
+        font-size: 24px;
+        text-transform: none;
+    }
+    .header img {
+        Width: 210.32px;
+        height: 68px;
+    }
 }

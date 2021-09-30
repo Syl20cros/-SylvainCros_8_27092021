@@ -2,7 +2,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 86vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -17,20 +16,51 @@
 }
 
 .error h2 {
-    font-weight: 700;
-    font-size: 288px;
-    margin: 0px;
+    font-weight: bold;
+    font-size: 96px;
+    margin-top: 6rem;
+    margin-bottom: 0;
 }
 
 .error p {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 18px;
+    line-height: 142.6%;
     margin: 0px;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .error Link {
     font-weight: 500;
-    font-size: 18px;
-    margin: 0px;
+    font-size: 14px;
+    line-height: 142.6%;
+    margin-bottom: 2rem;
+}
+
+.error a {
+    color: #FF6060;
+}
+
+@media screen and (min-width:768px) {
+    .error h2 {
+        font-weight: bold;
+        font-size: 288px;
+        line-height: 142.6%;
+        margin: 0px;
+    }
+    .error p {
+        font-weight: 500;
+        font-size: 36px;
+        margin: 0px;
+        margin-bottom: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .error Link {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0px;
+    }
 }

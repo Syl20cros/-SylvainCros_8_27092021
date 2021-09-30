@@ -7,8 +7,8 @@ class About extends React.Component {
     render() {
         return (
             <main>
-                <div>Page About</div>
                 <Banner picture={ImgBannerAbout} />
+                <div>Page About</div>
             </main>
         );
     }

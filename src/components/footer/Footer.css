@@ -10,6 +10,8 @@
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    font-size: 12px;
+    line-height: 142.6%;
 }
 
 .footer img {
@@ -17,4 +19,11 @@
     Width: 122px;
     height: 39.44px;
     filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width:768px) {
+    .footer p {
+        font-size: 24px;
+        line-height: 142.6%;
+    }
 }
