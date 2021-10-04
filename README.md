@@ -1,3 +1,7 @@
+# GitHub page
+
+Link to GitHub page [github page](https://syl20cros.github.io/SylvainCros_8_27092021/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

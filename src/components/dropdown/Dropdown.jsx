@@ -7,7 +7,7 @@ class Dropdown extends React.Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
-        this.state = { open: false };
+        this.state = { open: false }; //Status par defaut (fermé)
     }
 
     handleClick() {
@@ -17,16 +17,14 @@ class Dropdown extends React.Component {
     }
 
     render() {
-        const arrowPath = this.state.open ? arrowUp : arrowDown;
-        console.log(arrowPath);
+        const arrowDirection = this.state.open ? arrowUp : arrowDown; //direction des fleches en fonction du status ouvert ou ferné
         return (
             <section className="dropdown" onClick={this.handleClick}>
                 <div className="titleBar">
                     <h2>{this.props.title}</h2>
-                    {/* <i className="fas fa-chevron-up"></i> */}
-                    <img src={arrowPath} alt="icon" />
+                    <img src={arrowDirection} alt="icon" />
                 </div>
-                <p>{this.props.text}</p>
+                <p style={{ display: this.state.open ? 'block' : 'none' }}>{this.props.text}</p>
             </section>
         );
     }
