@@ -1,1 +1,71 @@
-@media only screen and (min-width: 768px) {}
+.infoLodgment {
+    color: #FF6060;
+    margin-bottom: 1.5rem;
+}
+
+.infoLodgment .infoLodgmentTitle {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.infoLodgment .location {
+    font-size: 14px;
+}
+
+.host {
+    color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.host figure {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+.hostName {
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.hostPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .infoLodgment {
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropDowns {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .dropDowns .dropdown {
+        width: calc(50% - 3%);
+    }
+    .infoLodgment .infoLodgmentTitle {
+        font-size: 36px;
+    }
+    .infoLodgment .location {
+        font-size: 18px;
+    }
+    .host {
+        flex-direction: column;
+    }
+    .hostName {
+        font-size: 18px;
+    }
+    .hostPicture {
+        width: 64px;
+        height: 64px;
+    }
+}

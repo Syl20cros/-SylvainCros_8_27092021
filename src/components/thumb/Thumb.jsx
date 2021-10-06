@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 class Thumb extends React.Component {
     render() {
         return (
-            <section className="block">
-                <Link to={`/lodgement/${this.props.id}`} className="thumb">
+            <Link to={`/lodgement/${this.props.id}`} className="thumb">
+                <figure className="block">
                     {this.props.cover !== '' && <img src={this.props.cover} alt="cover" />}
-                    <p>{this.props.title}</p>
-                </Link>
-            </section>
+                    <figcaption className="blockName">{this.props.title}</figcaption>
+                </figure>
+            </Link>
         );
     }
 }

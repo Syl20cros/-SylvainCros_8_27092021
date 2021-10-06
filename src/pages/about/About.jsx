@@ -1,5 +1,5 @@
 import React from 'react';
-// import './About.css';
+import './About.css';
 import Banner from '../../components/banner/Banner';
 import ImgBannerAbout from '../../assets/banner-about.png';
 import Dropdown from '../../components/dropdown/Dropdown';
