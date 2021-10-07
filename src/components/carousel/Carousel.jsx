@@ -6,11 +6,10 @@ import previousArrow from '../../assets/previousArrow.svg';
 class Carousel extends React.Component {
     constructor(props) {
         super(props);
-        this.handleClick = this.handleClick.bind(this);
         this.state = { index: 0 };
     }
 
-    handleClick(e) {
+    handleClick = (e) => {
         const id = e.target.id === 'previousArrow' ? -1 : 1;
         this.setState((value) => {
             let result = value.index;
@@ -23,7 +22,7 @@ class Carousel extends React.Component {
             }
             return { index: result };
         });
-    }
+    };
 
     render() {
         return (

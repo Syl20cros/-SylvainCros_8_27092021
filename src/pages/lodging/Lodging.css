@@ -52,6 +52,7 @@
     .infoLodgment {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
     .dropDowns {
         display: flex;
@@ -70,6 +71,7 @@
     .host {
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin-top: 0.5rem;
     }
     .hostName {
         font-size: 18px;
