@@ -4,6 +4,7 @@ import './Lodging.css';
 import Dropdown from '../../components/dropdown/Dropdown';
 import Tag from '../../components/tag/Tag';
 import Stars from '../../components/stars/Stars';
+import Carousel from '../../components/carousel/Carousel';
 const logements = require('../../datas/logements.json');
 
 class Lodging extends React.Component {
@@ -32,7 +33,7 @@ class Lodging extends React.Component {
             <div>Chargement en cours</div>
         ) : this.state.logement ? (
             <main>
-                <section className="gallery">gallery here</section>
+                <Carousel pictures={this.state.logement.pictures} />
 
                 <section className="infoLodgment">
                     <div className="infos">
