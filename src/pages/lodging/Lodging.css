@@ -1,22 +1,31 @@
 .infoLodgment {
     color: #FF6060;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .infoLodgment .infoLodgmentTitle {
     font-size: 18px;
-    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 .infoLodgment .location {
     font-size: 14px;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .host {
     color: #FF6060;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
 }
 
 .host figure {
@@ -42,7 +51,7 @@
 @media only screen and (min-width: 768px) {
     .infoLodgment {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
     }
     .dropDowns {
         display: flex;
@@ -59,7 +68,8 @@
         font-size: 18px;
     }
     .host {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: space-around;
     }
     .hostName {
         font-size: 18px;

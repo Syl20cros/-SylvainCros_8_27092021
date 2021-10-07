@@ -3,7 +3,7 @@ import './Tag.css';
 
 class Tag extends React.Component {
     render() {
-        return <div className="tags">{this.props.text}</div>;
+        return <div className="tag">{this.props.text}</div>;
     }
 }
 

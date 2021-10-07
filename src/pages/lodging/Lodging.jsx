@@ -3,6 +3,7 @@ import React from 'react';
 import './Lodging.css';
 import Dropdown from '../../components/dropdown/Dropdown';
 import Tag from '../../components/tag/Tag';
+import Stars from '../../components/stars/Stars';
 const logements = require('../../datas/logements.json');
 
 class Lodging extends React.Component {
@@ -32,16 +33,20 @@ class Lodging extends React.Component {
         ) : this.state.logement ? (
             <main>
                 <section className="gallery">gallery here</section>
+
                 <section className="infoLodgment">
-                    <h2 className="infoLodgmentTitle">{this.state.logement.title}</h2>
-                    <p className="location">{this.state.logement.location}</p>
-                    <div className="tags">
-                        {this.state.logement.tags.map((item, index) => (
-                            <Tag key={index} text={item} />
-                        ))}
+                    <div className="infos">
+                        <h2 className="infoLodgmentTitle">{this.state.logement.title}</h2>
+                        <p className="location">{this.state.logement.location}</p>
+                        <div className="tags">
+                            {this.state.logement.tags.map((item, index) => (
+                                <Tag key={index} text={item} />
+                            ))}
+                        </div>
                     </div>
+
                     <div className="host">
-                        <div className="stars">{this.state.logement.rating}</div>
+                        <Stars value={this.state.logement.rating} />
                         <figure>
                             <img
                                 className="hostPicture"
@@ -55,7 +60,7 @@ class Lodging extends React.Component {
                         </figure>
                     </div>
                 </section>
-                <div className="host"></div>
+
                 <section className="dropDowns">
                     <Dropdown title="Description" text={this.state.logement.description} />
                     <Dropdown
