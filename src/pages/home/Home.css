@@ -1,0 +1,10 @@
+@media only screen and (min-width: 768px) {
+    .gallery {
+        background-color: #F7F7F7;
+        border-radius: 25px;
+        padding: 56px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

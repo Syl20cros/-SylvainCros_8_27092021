@@ -1,0 +1,83 @@
+.infoLodgment {
+    color: #FF6060;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoLodgment .infoLodgmentTitle {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.infoLodgment .location {
+    font-size: 14px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.host {
+    color: #FF6060;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.host figure {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+.hostName {
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.hostPicture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+    .infoLodgment {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dropDowns {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .dropDowns .dropdown {
+        width: calc(50% - 3%);
+    }
+    .infoLodgment .infoLodgmentTitle {
+        font-size: 36px;
+    }
+    .infoLodgment .location {
+        font-size: 18px;
+    }
+    .host {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin-top: 0.5rem;
+    }
+    .hostName {
+        font-size: 18px;
+    }
+    .hostPicture {
+        width: 64px;
+        height: 64px;
+    }
+}

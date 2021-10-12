@@ -1,0 +1,29 @@
+.footer {
+    background-color: #000000;
+    text-align: center;
+    height: 209px;
+    color: white;
+    margin-top: 3rem;
+}
+
+.footer p {
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    font-size: 12px;
+    line-height: 142.6%;
+}
+
+.footer img {
+    margin-top: 4rem;
+    Width: 122px;
+    height: 39.44px;
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width:768px) {
+    .footer p {
+        font-size: 24px;
+        line-height: 142.6%;
+    }
+}

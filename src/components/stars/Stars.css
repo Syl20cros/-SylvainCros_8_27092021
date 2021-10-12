@@ -1,0 +1,22 @@
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars svg {
+    height: 15px;
+    width: 15px;
+    margin-left: 0.3rem;
+}
+
+.stars .icon-empty path {
+    fill: #e3e3e3;
+}
+
+@media only screen and (min-width: 768px) {
+    .stars svg {
+        height: 30px;
+        width: 30px;
+    }
+}
